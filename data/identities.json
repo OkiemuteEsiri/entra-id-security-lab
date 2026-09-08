@@ -1,0 +1,40 @@
+[
+  {
+    "id": "USR-001",
+    "display_name": "Synthetic Global Admin",
+    "type": "user",
+    "roles": ["Global Administrator"],
+    "mfa_enabled": false,
+    "conditional_access_covered": true,
+    "inactive_days": 5
+  },
+  {
+    "id": "USR-002",
+    "display_name": "Synthetic Security Analyst",
+    "type": "user",
+    "roles": ["Security Reader"],
+    "mfa_enabled": true,
+    "conditional_access_covered": true,
+    "inactive_days": 2
+  },
+  {
+    "id": "USR-003",
+    "display_name": "Synthetic Dormant Admin",
+    "type": "user",
+    "roles": ["Privileged Role Administrator"],
+    "mfa_enabled": true,
+    "conditional_access_covered": false,
+    "inactive_days": 95
+  },
+  {
+    "id": "SP-001",
+    "display_name": "Synthetic Automation App",
+    "type": "service_principal",
+    "roles": [],
+    "mfa_enabled": false,
+    "conditional_access_covered": true,
+    "inactive_days": 0,
+    "application_permissions": ["Directory.ReadWrite.All"],
+    "credential_age_days": 240
+  }
+]
